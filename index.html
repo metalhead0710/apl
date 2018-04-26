@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Aplayer</title>
+  <link type="text/css" href="APlayer.min.css" rel="stylesheet" />
+
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <script
+      src="http://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous"></script>
+  <script type="text/javascript" src="APlayer.min.js"></script>
+</head>
+<body>
+<div id="musicplayer" class="aplayer" style="width: 30%;"></div>
+</body>
+<script>
+  var ap1 = new APlayer({
+    element: document.getElementById('musicplayer'),
+    narrow: false,
+    autoplay: false,
+    showlrc: false,
+    mutex: true,
+    theme: '#A21319',
+    music: [ {
+      title: "Я один",
+      author:"Димна суміш",
+      url:"test.mp3",
+      pic:"arrow.jpg"
+    }]
+  });
+  ap1.init();
+</script>
+</html>
